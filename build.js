@@ -17,6 +17,7 @@ const closureCompiler = new ClosureCompiler({
   jscomp_off: "checkVars",
   formatting: 'PRETTY_PRINT',
   warning_level: "QUIET",
+  generate_exports: ["true"],
   // warning_level: "VERBOSE",
   // debug: true
 });

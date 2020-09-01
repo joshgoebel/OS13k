@@ -32,6 +32,19 @@
 ///////////////////////////////////////////////////////////////////////////////
 // OS13k Debug (remove from minified)
 
+goog.exportSymbol = () => {}
+goog.exportProperty = () => {}
+
+/** @export */
+var foo = {};
+
+/** @export */
+foo.bar = 42;
+
+if (foo.bar) {
+    console.log("hi")
+}
+
 let OS13kVersion = 81;
 
 /**
@@ -93,18 +106,21 @@ if (ENABLE_DEBUG) {
 ///////////////////////////////////////////////////////////////////////////////
 // OS13k Client Interface
 
+let os_math = {
+    Clamp:   (a, max=1, min=0) => { return a < min ? min : a > max ? max : a; },
+    Percent: (v, a, b)         => { return b-a ? OS13k.Clamp((v-a)/(b-a)) : 0; },
+    Lerp:    (p, a, b)         => { return a + OS13k.Clamp(p) * (b-a); },
+
+    // convert string to hash value like Java's hashCode()
+    Hash:    (s)    =>           { return [...s].reduce((a,c)=> c.charCodeAt()+a*31|0, 0); }
+
+}
 class _OS13k
 {
 
 /////////////////////////////////////////////////////////////////////////////
 // OS13k Math
 
-    Clamp   (a, max=1, min=0) { return a < min ? min : a > max ? max : a; }
-    Percent (v, a, b)         { return b-a ? OS13k.Clamp((v-a)/(b-a)) : 0; }
-    Lerp    (p, a, b)         { return a + OS13k.Clamp(p) * (b-a); }
-
-    // convert string to hash value like Java's hashCode()
-    Hash    (s)               { return [...s].reduce((a,c)=> c.charCodeAt()+a*31|0, 0); }
 
     // seeded random numbers - Xorshift
     Random(max=1, min=0)
@@ -538,7 +554,9 @@ class _OS13k
 
     Settings() { return settings; }
 }; // _OS13k
+/** @export {_OS13k} */
 var OS13k = new _OS13k;
+Object.assign(OS13k, os_math)
 
 ///////////////////////////////////////////////////////////////////////////////
 // OS13k System Functions and Consts - handles non client facing features of OS13k

@@ -25,40 +25,40 @@ var popups;
 
 
 /** @type {__OS13k} */
-var OS13k;
+// var OS13k;
 
-class __OS13k {
-  Clamp   (a, max=1, min=0) { }
-  Percent (v, a, b)         { }
-  Lerp    (p, a, b)         { }
-  Random(max=1, min=0) {}
-  Hash() {}
-  randomSeed() {}
+// class __OS13k {
+//   Clamp   (a, max=1, min=0) { }
+//   Percent (v, a, b)         { }
+//   Lerp    (p, a, b)         { }
+//   Random(max=1, min=0) {}
+//   Hash() {}
+//   randomSeed() {}
 
-  Trophies() {}
-  Trophy() {}
-  GetTrophy() {}
-  PlaySamples() {}
-  Note() {}
-  PianoKey() {}
-  PlayMusic() {}
-  GetAnalyser() {}
-  GetAnalyserData() {}
-  Speak() {}
-  StopSpeech() {}
-  PlaySeed() {}
-  SeedSamples() {}
-  SeedParameters() {}
-  Settings() {}
-  SaveSettings() {}
-  Input() {}
-  CreateShader() {}
-  RenderShader() {}
-  KeyDirection() {}
-  StripHTML() {}
-  StringToMusic() {}
-  Popup() {}
-}
+//   Trophies() {}
+//   Trophy() {}
+//   GetTrophy() {}
+//   PlaySamples() {}
+//   Note() {}
+//   PianoKey() {}
+//   PlayMusic() {}
+//   GetAnalyser() {}
+//   GetAnalyserData() {}
+//   Speak() {}
+//   StopSpeech() {}
+//   PlaySeed() {}
+//   SeedSamples() {}
+//   SeedParameters() {}
+//   Settings() {}
+//   SaveSettings() {}
+//   Input() {}
+//   CreateShader() {}
+//   RenderShader() {}
+//   KeyDirection() {}
+//   StripHTML() {}
+//   StringToMusic() {}
+//   Popup() {}
+// }
 
 // @js_externs OS13k.Clamp, OS13k.Percent, OS13k.Lerp, OS13k.Hash
 // @js_externs OS13k.Random, OS13k.randomSeed, iframeContent.OS13kReload
