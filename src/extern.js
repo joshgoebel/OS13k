@@ -17,7 +17,8 @@ DO_NOT_MUNG.OS13k;
 DO_NOT_MUNG.OS13kVersion;
 DO_NOT_MUNG.OS13kWindow;
 DO_NOT_MUNG.zzfx;
-
+DO_NOT_MUNG.zzfxG;
+DO_NOT_MUNG.zzfxM;
 
 document.OS13kInput;
 document.OS13kInput.x;

@@ -163,7 +163,6 @@ console.log(localStorage.OS13k)
 console.log(localStorage.OS13kVersion)
 
 /**
- * @export
  * @suppress {duplicate}
  * */
 var settings = { 'v':.3, 'm':.3, 's':1, 'p':1, 'o':1, 'c':'#222233', 'd':'#332222', 't':'OS13k', 'f':''};
