@@ -1,0 +1,17 @@
+{
+  "name": "OS13k",
+  "version": "0.1.0",
+  "description": "OS13k is a tiny operating system that fits in a 13 kb zip file.",
+  "main": "index.js",
+  "repository": "https://github.com/KilledByAPixel/OS13k",
+  "author": "Frank Force <frankforce@gmail.com>",
+  "license": "GPL3",
+  "dependencies": {
+    "google-closure-compiler": "^20200719.0.0",
+    "http-server": "^0.12.3",
+    "terser": "^5.2.1"
+  },
+  "scripts": {
+    "serve": "yarn run http-server"
+  }
+}
