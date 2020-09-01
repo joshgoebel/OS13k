@@ -7,6 +7,7 @@ console.log(ClosureCompiler.CONTRIB_PATH); // absolute path to the contrib folde
 
 const closureCompiler = new ClosureCompiler({
   compilation_level: 'ADVANCED',
+  // compilation_level: 'SIMPLE',
   env: "BROWSER",
   js: ["programs.js",'src/os.js'],
   js_output_file: 'out.js',
@@ -17,8 +18,8 @@ const closureCompiler = new ClosureCompiler({
   jscomp_off: "checkVars",
   formatting: 'PRETTY_PRINT',
   warning_level: "QUIET",
-  generate_exports: ["true"],
-  // warning_level: "VERBOSE",
+  generate_exports: true,
+  warning_level: "VERBOSE",
   // debug: true
 });
 

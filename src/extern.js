@@ -1,7 +1,41 @@
 // @extern
-// var localStorage = window.localStorage;
 
-var localStorage;
+// do not rename settings
+var settings;
+settings.v;
+settings.m;
+settings.s;
+settings.p;
+settings.o;
+settings.c;
+settings.d;
+settings.t;
+settings.f;
+
+var DO_NOT_MUNG = {};
+DO_NOT_MUNG.OS13k;
+DO_NOT_MUNG.OS13kVersion;
+DO_NOT_MUNG.OS13kWindow;
+DO_NOT_MUNG.zzfx;
+
+
+document.OS13kInput;
+document.OS13kInput.x;
+document.OS13kInput.y;
+document.OS13kInput.keypress;
+document.OS13kInput.mousepress;
+document.OS13kInput.keydown;
+document.OS13kInput.mousedown;
+document.OS13kInput.mousex;
+document.OS13kInput.mousey;
+
+// var localStorage = {};
+// localStorage.OS13k;
+// localStorage.OS13kVersion;
+
+/* @record */
+// var _settings = {v:.3, m:.3, s:1, p:1, o:1, c:'#222233', d:'#332222', t:'OS13k', f:''};
+// var settings;
 
 var programsMenu, menu;
 
@@ -23,9 +57,6 @@ var background;
 /** @type {HTMLElement} */
 var popups;
 
-
-/** @type {__OS13k} */
-// var OS13k;
 
 // class __OS13k {
 //   Clamp   (a, max=1, min=0) { }
@@ -60,13 +91,3 @@ var popups;
 //   Popup() {}
 // }
 
-// @js_externs OS13k.Clamp, OS13k.Percent, OS13k.Lerp, OS13k.Hash
-// @js_externs OS13k.Random, OS13k.randomSeed, iframeContent.OS13kReload
-// @js_externs OS13k.Trophies, OS13k.Trophy, OS13k.GetTrophy
-// @js_externs OS13k.PlaySamples, OS13k.Note, OS13k.PianoKey
-// @js_externs OS13k.PlayMusic, OS13k.GetAnalyser, OS13k.GetAnalyserData
-// @js_externs OS13k.Speak, OS13k.StopSpeech, OS13k.PlaySeed
-// @js_externs OS13k.SeedSamples, OS13k.SeedParameters
-// @js_externs OS13k.Settings, OS13k.SaveSettings, OS13k.Input
-// @js_externs OS13k.CreateShader, OS13k.RenderShader
-// @js_externs OS13k.KeyDirection, OS13k.StripHTML, OS13k.StringToMusic, OS13k.Popup
